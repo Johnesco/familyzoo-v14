@@ -3,7 +3,7 @@ story
   authors:
     John Googol
   id: familyzoo-v14
-  ifid: 9969AB8D-E361-4B9C-86DB-832B6D0E0F86
+  ifid: 82702714-30CF-4758-B980-A112F8F03EA8
   story-version: 0.0.2
   description: Sharpee tutorial step 14 — `on every turn` and `define sequence`.
 
@@ -52,11 +52,10 @@ create the Aviary
   aka bird house, dome
   west to the Gift Shop
 
-  You step inside a soaring mesh dome. Brilliantly colored parrots
-  chatter from rope perches, and a toucan eyes you curiously from a
-  branch overhead. A small waterfall splashes into a stone basin. An
-  info plaque hangs near the entrance. The gift shop is to the west. The
-  main path is back to the east.
+  You step inside a soaring mesh dome. A toucan eyes you curiously from a
+  branch overhead, and rope perches crisscross the space. A small
+  waterfall splashes into a stone basin. A plaque hangs near the
+  entrance. The gift shop is to the west. The main path is back to the east.
 
 create the Supply Room
   a room

@@ -1,32 +1,30 @@
-# Family Zoo — v14 — Capability Dispatch
+# Family Zoo — v14: Daemons & Sequences
 
-Petting the goats feels different from petting the parrot (which bites). Introduces capability dispatch — one verb whose behavior is delegated to whichever trait the target entity carries.
+The zoo starts moving on its own: PA announcements, feeding time, goats that get hungrier. A daemon runs every turn; a sequence is a scripted run of beats.
 
-Step 14 of the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial — a progressive walkthrough of the [Sharpee](https://sharpee.net) TypeScript interactive fiction engine, from a single room to a full multi-file story.
+Step 14 of sixteen in the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial for [Chord](https://sharpee.net/chord/), the authoring language of the [Sharpee](https://sharpee.net) interactive fiction engine.
 
-## What this step teaches
+## What this step adds
 
-- Custom traits declaring a static capabilities[] list
-- registerCapabilityBehavior with optional condition predicates
-- createCapabilityDispatchAction factory for auto-built dispatch actions
-- Per-entity behavior selection via trait data like animalKind
-- The verb vs entity responsibility split vs. plain custom actions
+- `on every turn` — the daemon
+- `define sequence feeding time` — scripted beats in order
+- Gating a daemon on a condition so it is not always talking
+- Keeping ambient text from drowning the player's own actions
 
-## Playing
+## The source
 
-Open `play.html`, or preview the folder:
+The whole step is one file: [`familyzoo-v14.story`](./familyzoo-v14.story) — the step before it plus the ideas above. The chapter that walks through it is [`docs/v14-daemons-sequences.md`](./docs/v14-daemons-sequences.md).
 
-```bash
-python -m http.server 8000 --directory familyzoo-v14
-```
-
-## Building
-
-This is a **frozen 0.9.x TypeScript version**. The built player in this folder is the published artifact; it is re-laid from `browser/` by the workspace build:
+## Playing and testing
 
 ```bash
-python ../tools/build.py familyzoo-v14
-python C:/code/ifhub/tools/ship.py familyzoo-v14
+npx sharpee play
+npx sharpee test          # replays familyzoo-v14.tests.json
+python ../tools/build.py familyzoo-v14 --force
 ```
 
-The authoring tree for every version lives in the [familyzoo](https://github.com/Johnesco/familyzoo) repo.
+## Engine
+
+Pinned to `@sharpee/*` **5.3.0** (Chord 3.6.0), held there by an `overrides` block: 5.3.1 publishes broken subpath exports and breaks `sharpee test`.
+
+The 0.9.x TypeScript edition this replaced is kept in [`legacy/`](./legacy).
