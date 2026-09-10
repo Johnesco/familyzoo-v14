@@ -1,8 +1,4 @@
 south
-east
-pet goats
-pet rabbits
-pet hay bale
-west
-west
-pet parrot
+wait
+wait
+wait

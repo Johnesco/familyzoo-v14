@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "story": "familyzoo-v14",
+  "seed": 42,
+  "cards": [
+    {
+      "type": "opening",
+      "assertions": {
+        "channels": [
+          {
+            "id": "info.title",
+            "is": "Family Zoo (v14 — Daemons & Sequences)"
+          },
+          {
+            "id": "info.description",
+            "is": "Sharpee tutorial step 14 — `on every turn` and `define sequence`."
+          }
+        ]
+      }
+    },
+    {
+      "type": "boot",
+      "assertions": {
+        "contains": [
+          "Zoo Entrance",
+          "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "south",
+      "assertions": {
+        "contains": [
+          "Main Path",
+          "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "wait",
+      "assertions": {
+        "contains": [
+          "Time passes..."
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "wait",
+      "assertions": {
+        "contains": [
+          "Time passes..."
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "wait",
+      "assertions": {
+        "contains": [
+          "Time passes..."
+        ]
+      }
+    }
+  ]
+}
