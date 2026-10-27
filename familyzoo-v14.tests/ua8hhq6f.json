@@ -1,10 +1,6 @@
 {
-  "version": 1,
-  "story": "familyzoo-v14",
-  "seed": 42,
   "cards": [
     {
-      "type": "opening",
       "assertions": {
         "channels": [
           {
@@ -16,53 +12,61 @@
             "is": "Sharpee tutorial step 14 — `on every turn` and `define sequence`."
           }
         ]
-      }
+      },
+      "id": "p1lf6ql1",
+      "type": "opening"
     },
     {
-      "type": "boot",
       "assertions": {
         "contains": [
           "Zoo Entrance",
           "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
         ]
-      }
+      },
+      "id": "lmm613rs",
+      "type": "boot"
     },
     {
-      "type": "turn",
-      "command": "south",
       "assertions": {
         "contains": [
           "Main Path",
           "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
         ]
-      }
+      },
+      "command": "south",
+      "id": "5t8ohbug",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "wait",
       "assertions": {
         "contains": [
           "Time passes..."
         ]
-      }
+      },
+      "command": "wait",
+      "id": "fo893b7h",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "wait",
       "assertions": {
         "contains": [
           "Time passes..."
         ]
-      }
+      },
+      "command": "wait",
+      "id": "qdpjncly",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "wait",
       "assertions": {
         "contains": [
           "Time passes..."
         ]
-      }
+      },
+      "command": "wait",
+      "id": "vwz908ny",
+      "type": "turn"
     }
-  ]
+  ],
+  "id": "ua8hhq6f"
 }
